@@ -10,8 +10,9 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 Encore
   // ENABLE TAILWIND
   .enablePostCssLoader()
-  // ENV VAR
+  // ENABLE ENVIRONMENT VARIABLES REACT
   .addPlugin(new Dotenv({ path: "./.env.local", systemvars: true }))
+  
   // directory where compiled assets will be stored
   .setOutputPath("public/build/")
   // public path used by the web server to access the output path
@@ -70,8 +71,9 @@ Encore
   // uncomment if you use TypeScript
   //.enableTypeScriptLoader()
 
-  // uncomment if you use React
+  // ENABLE REACT
   .enableReactPreset()
+  // ENABLE REACT ADMIN
   .addEntry("admin", "../frontend/src/pages/admin/index.jsx");
 
 // uncomment to get integrity="..." attributes on your script & link tags

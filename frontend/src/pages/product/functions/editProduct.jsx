@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import axios from "axios";
+import process from "process";
 
 const EditProduct = () => {
   const [product, setProduct] = useState({

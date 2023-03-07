@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/navbar";
 import axios from "axios";
+import process from "process";
 
 const DashBoard = () => {
   const [user, setUser] = useState({
