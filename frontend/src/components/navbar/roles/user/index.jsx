@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogOut from "./logout";
+import LogOut from "../../functions/logout";
 
-const Admin = () => {
+const User = () => {
   return (
     <nav className="w-full fixed top-0 bg-gradient-to-r from-orange-400 to-slate-400 text-black uppercase p-4">
       <ul className="flex flex-row justify-around">
@@ -37,22 +37,6 @@ const Admin = () => {
           </a>
         </li>
         <li>
-          <a
-            href={"/admin"}
-            className="hover:transition hover:text-white hover:duration-500 hover:ease-in-out"
-          >
-            Admin
-          </a>
-        </li>
-        <li>
-          <Link
-            to={`/users`}
-            className="hover:transition hover:text-white hover:duration-500 hover:ease-in-out"
-          >
-            Users
-          </Link>
-        </li>
-        <li>
           <button
             className="uppercase hover:transition hover:text-white hover:duration-500 hover:ease-in-out"
             onClick={() => LogOut()}
@@ -65,4 +49,4 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default User;

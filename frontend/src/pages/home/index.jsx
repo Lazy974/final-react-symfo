@@ -78,7 +78,7 @@ const Home = () => {
       <p onClick={showMovies} className="mt-20">
         movies
       </p>
-      <p onClick={handleClick} className="mt-20">
+      <p onClick={handleClick} className="mt-20 bg-purple-900">
         movies
       </p>
 

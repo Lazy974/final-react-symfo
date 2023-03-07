@@ -1,7 +1,7 @@
 import React from "react";
-import User from "./user";
-import Admin from "./admin";
-import Anonymous from "./anonymous";
+import Anonymous from "./roles/anonymous";
+import User from "./roles/user";
+import Admin from "./roles/admin";
 
 const Navbar = () => {
   if (window.user === null) {
