@@ -2,7 +2,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "npx tailwindcss -i ./src/assets/css/styles.css -o ../backend/public/assets/css/styles.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",

@@ -14,5 +14,5 @@ import { registerReactControllerComponents } from "@symfony/ux-react";
 // internal components won't be automatically included in your JS built file if
 // they are not necessary.
 registerReactControllerComponents(
-  require.context("../../frontend/src/assets/twig", true, /\.(j|t)sx?$/)
+  require.context("./react", true, /\.(j|t)sx?$/)
 );

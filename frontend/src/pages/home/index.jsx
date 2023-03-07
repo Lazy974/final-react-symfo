@@ -3,16 +3,6 @@ import Navbar from "../../components/navbar";
 import { CookiesProvider } from "react-cookie";
 import { SetToken } from "../../middleware/token/setToken";
 
-const Ads = () => {
-  category.movies.map((element, key) => {
-    <div key={key} className="grid grid-rows-3">
-      <span>Id du film : {element.id}</span>
-      <h1>Titre du film : {element.title}</h1>
-      <img src={element.img} alt={element.alt} />
-    </div>;
-  });
-};
-
 const category = {
   movies: [
     {
@@ -75,10 +65,10 @@ const Home = () => {
   return (
     <CookiesProvider>
       <Navbar />
-      <p onClick={showMovies} className="mt-20">
+      <p onClick={showMovies} className="mt-20 text-amber-400 bg-rose-600 text-2xl">
         movies
       </p>
-      <p onClick={handleClick} className="mt-20 bg-purple-900">
+      <p onClick={handleClick} className="mt-20 text-cyan-600 text-9xl">
         movies
       </p>
 
@@ -98,7 +88,7 @@ const Home = () => {
               </div>
             );
           })
-        : console.error(false)}
+        : console.log(false)}
     </CookiesProvider>
   );
 };

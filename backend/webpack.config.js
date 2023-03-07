@@ -8,6 +8,8 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 }
 
 Encore
+  // ENABLE TAILWIND
+  .enablePostCssLoader()
   // ENV VAR
   .addPlugin(new Dotenv({ path: "./.env.local", systemvars: true }))
   // directory where compiled assets will be stored
@@ -24,7 +26,9 @@ Encore
    * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
    */
   .addEntry("app", "../frontend/app.jsx")
+  .addEntry("tailwind", "./assets/tailwind.js")
   .addEntry("twig", "./assets/twig.js")
+  .addEntry("styles", "./assets/css/styles.css")
 
   // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
   .enableStimulusBridge("./assets/controllers.json")
